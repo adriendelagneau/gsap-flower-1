@@ -1,26 +1,356 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
 }
+/* FLOWER */
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.container{
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+h1{
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 10vw;
+  color: #333;
+  font-weight: 100;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border:2px solid #222;
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img{
+  position: absolute;
+  transform: translate(0%, -50%) scale(0);
+  -webkit-transform: translate(0%, -50%) scale(0);
+  -moz-transform: translate(0%, -50%) scale(0);
+  -ms-transform: translate(0%, -50%) scale(0);
+  -o-transform: translate(0%, -50%) scale(0);
+  top: 55%;
+}
+
+.img1{
+  left: -5%;
+  width: 350px;
+  z-index: 10;
+}
+.img2{
+  left: -5%;
+  width: 900px;
+}
+.img3{
+  left: 25%;
+  width: 850px;
+  z-index: 25;
+}
+.img4{
+  left: 55%;
+  width: 550px;
+  z-index: 35;
+}
+.img5{
+  left: 65%;
+  width: 850px;
+}
+
+/*  TEST */
+
+.ct1{
+  height: 100vh;
+  width: 100%;
+display: grid;
+place-content: center;
+}
+.ct2{
+  height: 100vh;
+  width: 100%;
+  background: rgb(138, 48, 48);
+}
+.boxx{background: rgb(255, 0, 0); width: 200px; height: 200px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
+}
+
+/* Fire Hill*/
+.fireContainer{
+  width:100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.fireImg{
+  width: 100%;
+  height: 100%;  
+  position: relative;
+  overflow-x: hidden;
+}
+.titi{
+  position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+.titi img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.fireBox{
+  width: 100%;
+  height: 0vh;
+  position: absolute;
+  bottom: 0px;
+  z-index: 999;
+  background: #210002;
+}
+
+.fireBox2{
+  width: 100%;
+  height: 100vh;
+  background: #210002;
+  color: white;
+  display: grid;
+  place-content: center;
+
+}
+
+
+/* FLOWER LANDING */
+.container2{
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  font-family: 'PT Sans', sans-serif;
+}
+body ul li{
+  list-style: none;
+}
+body a{
+  text-decoration: none;
+}
+/* header*/
+
+.header{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.Lround{
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(#123456,#456789);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 10px;
+}
+.header nav{
+  width: 100%;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.header nav ul li{
+  display: inline-block;
+}
+.header nav ul li a{
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #fff;
+}
+.HIcon{
+  width: 100%;
+}
+.Hwrap{
+  width: 200px;
+  height: 90px;
+  background: rgb(255, 255, 255);
+  float: right;
+  padding: 10px;
+  text-align: right;
+  clip-path: circle(46.5% at 100% 0);
+  cursor: pointer;
+}
+
+.hwrapImg{
+  width: 40px;
+ 
+  object-fit: cover;
+}
+/* container*/
+.Fcontainer{
+width: 100%;
+display: grid;
+grid-template-columns: 6% 94%;
+}
+.sideline{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.line{
+  display: flex;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.line span{
+  width: 5px;
+  height: 200px;
+  display: inline-block;
+  margin: 5px;
+  background: #fff;
+}
+.lone,.ltwo,.lthree{
+  display: block;
+}
+.ltwo{
+  margin-top: 50px;
+}
+.lthree{
+  margin-top: 100px;
+}
+/* container heading*/
+.heading img{
+  width: 65%;
+}
+
+.up {
+	text-align: center;
+	width: 100%;
+	height: 738px;
+	overflow: hidden;
+	background: url('https://res.cloudinary.com/dos8mey8r/image/upload/v1670922358/flower/flower_tasqfe.png') no-repeat;
+	background-position: 45%;
+	background-size: 57%;
+	display: grid;
+	place-items: center;
+	place-content: center;
+
+}
+.up h1{
+	font-size: 150px;
+	color: #fff;
+	mix-blend-mode: difference;
+	text-shadow:2px 1px 1px #FFFFFF,
+				2px 1px 3px #FFFFFF,
+				2px -2px 1px #FFFFFF,
+				-2px 1px 1px #FFFFFF,
+				2px 2px 3px #000,
+				-2px 5px 4px #000;
+    font-weight: 400;
+}
+.up h1:last-child {
+	transform: translate(110px, -55px);
+	-webkit-transform: translate(110px, -55px);
+	-moz-transform: translate(110px, -55px);
+	-ms-transform: translate(110px, -55px);
+	-o-transform: translate(110px, -55px);
+ 
+}
+.up span {
+letter-spacing: 25px;
+
+}
+.down {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+.paraG p {
+	color: white;
+  font-size: 24px;
+  text-transform: capitalize;
+  padding-right: 25px;
+	
+}
+.solink ul li {
+	display: inline-block;
+	padding: 0px 8px;
+	overflow: hidden;
+}
+.solink a {
+	color: white;
+	display: inline-block;
+	font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+	position:relative;
+	padding:5px 0px;
+	cursor:pointer;
+}
+.solink a::after{
+	content:"";
+	width:0%;
+	height:2px;
+    background:#fff;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	transition:.5s;
+
+}
+.solink a:hover::after{
+	width:100%;
+}
+
+.solink {
+	padding-top: 70px;
+	font-family: LEMON MILK;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circleTest{
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
